@@ -25,3 +25,22 @@ O código da aplicação também será, em sua grande parte, compartilhado entre
 A arquitetura é a ilustrada abaixo:
 
 ![](images/barramento-electron.jpg)
+
+## 3 - Quem está utilizando esta tecnologia?
+
+Um número crescente de aplicativos para desktop já estão disponíveis nesta plataforma, destacando-se:
+
+- Discord
+- Gitbhub desktop
+- Whatsapp desktop
+- Skype
+- Visual Studio Code
+- Insomnia
+- Twitch
+- Microsoft Teams
+
+## 4 - Capturas de tela
+
+![](images/login.jpg)
+
+![](images/settings.jpg)
