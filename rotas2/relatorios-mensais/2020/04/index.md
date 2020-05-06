@@ -4,4 +4,8 @@
 
 O foco principal do mês de abril foi a continuação da migração da tecnologia de desenvolvimento dos módulos envolvidos na aplicação de coleta off-line.
 
-![](images/barramento.jpg)
+### Migração da tecnologia do coletor (módulo Windows)
+
+Acompanhando a evolução do coletor dos módulos mobile (Android e iOS), o módulo de coleta Windows também será migrado para uma nova tecnologia.
+
+
