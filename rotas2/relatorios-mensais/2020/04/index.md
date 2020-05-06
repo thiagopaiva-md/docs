@@ -4,7 +4,7 @@
 
 O foco principal do mês de abril foi a continuação da migração da tecnologia de desenvolvimento dos módulos envolvidos na aplicação de coleta off-line.
 
-### Migração da tecnologia do coletor: módulos "Coletor vibração" e "Formulário"
+### Migração da tecnologia do coletor: Módulos "Coletor vibração" e "Formulário"
 
 Acompanhando a evolução do coletor dos módulos mobile (Android e iOS), o módulo de coleta Windows também será migrado para uma nova tecnologia, denominada Electron.\
 O Electron é uma plataforma para desenvolvimento de aplicações utilizando tecnologias web, dentre as quais podemos destacar o HTML5 e o Javascript.\
