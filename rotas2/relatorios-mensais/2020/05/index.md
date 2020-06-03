@@ -40,4 +40,18 @@ Nesta tela, o usuário terá acesso às rotas que estão no servidor. As rotas v
 
 ![](images/nova-rota-indisponiveis.jpg)
 
+### 1.1.5 - Execução da rota
 
+![](images/rota.jpg)
+
+### 1.1.5.1 - Estado do equipamento
+
+Ao clicar no ícone à esquerda do campo de resposta, o usuário poderá informar o estado do equipamento, que poderá ser Ok, Em manutenção ou desligado. Ao selecionar as duas últimas opções, não será possível responder à pergunta daquele ponto monitorado.
+
+![](images/rota-estado.jpg)
+
+### 1.1.5.2 - Anexos
+
+Ao clicar no botão à direita do campo de resposta, o usuário poderá anexar arquivos à coleta, podendo ser uma foto, um áudio, ou um comentário.
+
+![](images/rota-anexos.png)
