@@ -21,3 +21,17 @@ O usuário deverá informar seu login e senha cadastrados no Sistema MDM para te
 Ao selecionar as opções "Nova Rota" ou "Continuar rota", o usuário poderá informar se gostaria de obter uma lista de rotas diretamente do servidor ou se as rotas já estão no dispositivo (pois já foram baixadas em outro momento), conforme figura ilustrada a seguir:
 
 ![](images/nova-rota-question.jpg)
+
+### 1.1.3 - Obter rotas do servidor
+
+Nesta tela, o usuário terá acesso às rotas que estão no servidor. As rotas virão categorizadas em listas colapsáveis entre disponíveis e indisponíveis. Caso indisponível, será exibida também a razão deste fato.
+
+### 1.1.3.1 - Rotas disponíveis expandidas
+
+![](images/nova-rota.jpg)
+
+### 1.1.3.2 - Rotas indisponíveis expandidas
+
+![](images/nova-rota-indisponiveis.jpg)
+
+
