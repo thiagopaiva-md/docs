@@ -22,15 +22,21 @@ Ao selecionar as opções "Nova Rota" ou "Continuar rota", o usuário poderá in
 
 ![](images/nova-rota-question.jpg)
 
-### 1.1.3 - Obter rotas do servidor
+### 1.1.3 - Configurações
+
+A principal tela de configurações do sistema, onde o usuário poderá configurar o endereço de acesso ao servidor, idioma do aplicativo, fazer upload da logo de sua empresa, entre outras opções.
+
+![](images/config.jpg)
+
+### 1.1.4 - Obter rotas do servidor
 
 Nesta tela, o usuário terá acesso às rotas que estão no servidor. As rotas virão categorizadas em listas colapsáveis entre disponíveis e indisponíveis. Caso indisponível, será exibida também a razão deste fato.
 
-### 1.1.3.1 - Rotas disponíveis expandidas
+### 1.1.4.1 - Rotas disponíveis expandidas
 
 ![](images/nova-rota.jpg)
 
-### 1.1.3.2 - Rotas indisponíveis expandidas
+### 1.1.4.2 - Rotas indisponíveis expandidas
 
 ![](images/nova-rota-indisponiveis.jpg)
 
