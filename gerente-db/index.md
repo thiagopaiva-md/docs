@@ -26,7 +26,7 @@ O Json de entrada deve conter:
   orderBy?: [ // Array para ordernação
     {
       field: string;
-      order?: string = 'asc' | 'desc'; // Se omitido será "asc"
+      order?: string = 'ASC' | 'DESC'; // Se omitido será "asc" - Atenção à letra maiúscula!
     }
   ]
 }
