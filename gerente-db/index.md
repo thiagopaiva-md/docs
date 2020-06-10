@@ -9,15 +9,15 @@ O Json de entrada deve conter:
 ```
 {
   table: string; // O nome da tabela a consultar
-  where?: [
-    {      // Array de condições para filtrar a consulta
-      type?: string = 'and' | 'or'; // Utilizar apenas da segunda em diante, se omitido será and
+  where?: [      // Array de condições para filtrar a consulta
+    {      
+      type?: string = 'and' | 'or'; // Se omitido será and
       condition: string;
       params: object;
     }
   ] 
-  relations?: [
-    {  // Array de relacionamentos a incluir com inner join ou left join
+  relations?: [ // Array de relacionamentos a incluir com inner join ou left join
+    {  
       join: string = 'innerJoin' | 'leftJoin';
       relation: string;
       alias: string;  
