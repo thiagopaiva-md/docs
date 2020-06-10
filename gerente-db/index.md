@@ -61,7 +61,7 @@ Os campos com "?" são opcionais.
     },
     {
       "field": "identificador",
-      "order": "desc",
+      "order": "DESC",
     },
   ],
 }
