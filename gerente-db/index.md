@@ -9,16 +9,20 @@ O Json de entrada deve conter:
 ```
 {
   table: string; // O nome da tabela a consultar
-  where?: {      // Condições para filtrar a consulta
-    type: string = 'and' | 'or';
-    condition: string;
-    params: object;
-  } 
-  relations?: {  // Relacionamentos a incluir com inner join ou left join
-    join: string = 'innerJoin' | 'leftJoin';
-    relation: string;
-    alias: string;
-  }
+  where?: [
+    {      // Array de condições para filtrar a consulta
+      type?: string = 'and' | 'or'; // Utilizar apenas da segunda em diante, se omitido será and
+      condition: string;
+      params: object;
+    }
+  ] 
+  relations?: [
+    {  // Array de relacionamentos a incluir com inner join ou left join
+      join: string = 'innerJoin' | 'leftJoin';
+      relation: string;
+      alias: string;  
+    }
+  ]
 }
 ```
 Os campos com "?" são opcionais.
