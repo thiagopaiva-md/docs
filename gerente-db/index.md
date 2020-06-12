@@ -153,11 +153,11 @@ update from ROTA
  "table": "rota",
  "values": [
    {
-     "name": "Rota Posto 1 - Turno dia",
+     "nome": "Rota Posto 1 - Turno dia",
      "descricao": { "Rota turno do dia do posto 1" }
    },   
    {
-     "name": "Rota Posto 1 - Turno noite",
+     "nome": "Rota Posto 1 - Turno noite",
      "descricao": { "Rota turno da noite do posto 1" }
    },
  ] 
@@ -166,8 +166,5 @@ update from ROTA
 O exemplo acima produzirá a seguinte query:
 
 ```
-update from ROTA 
-  set TIPOROTA = @0, PERIDICIDADEDIAS = @1 
-  where idGrupoUsuario = @2 
-  -- PARAMS: {@0: 110002, @1: 107000, @2: "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}"}
+
 ```
