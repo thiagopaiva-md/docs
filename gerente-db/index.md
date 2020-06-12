@@ -1,10 +1,10 @@
 # Documentação Gerente DB
 
+O Json de entrada de todos os comandos devem ter, **obrigatoriamente, o campo table.**
+
+- **table**: O nome da tabela. Tipo dado: string; 
+
 ## Select
-
-O Json de entrada do comando select deve conter:
-
-- **table**: O nome da tabela. Tipo dado: string; **Comum a todos os comandos opcionais.**
 
 ### Condição
 
@@ -12,7 +12,7 @@ O Json de entrada do comando select deve conter:
 
   - **type**: string. o tipo de conjunção entre condições. Valores permitidos: "and" | "or". Só é considerado da segunda condição em diante.
   - **condition**: string. A condição propriamente dita, no formato de query params.
-  - **params**: Json object. Os valores dos parâmetros da query do campo acima. Sintaxe:
+  - **param**: Json object. Os valores dos parâmetros da query do campo acima. Sintaxe:
     - **nome do campo**: variant.
     
 **Exemplo**
@@ -35,7 +35,7 @@ O exemplo acima produzirá a seguinte query:
 
 ```
 select * from ROTA 
-  where IDGRUPOUSUARIO = @0 OR TIPOROTA = @1; -- PARAMS: {0: "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}", 1: 110000}
+  where IDGRUPOUSUARIO = @0 OR TIPOROTA = @1; -- PARAMS: {@0: "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}", @1: 110000}
 ```
 
 ### Relacionamentos
@@ -94,7 +94,7 @@ select * from ROTA
 
 ### Limitação de resultados
 
-- **take?**: Limitação de resultados, equivale ao comando "top". **Comando opcional.*
+- **take?**: Limitação de resultados, equivale ao comando "top". **Comando opcional.**
 
 **Exemplo**
 ```
@@ -106,4 +106,68 @@ O exemplo acima produzirá a seguinte query:
 
 ```
 select top(10) * from ROTA;  
+```
+
+## Update
+
+### Condição
+
+- **where**: Json object. Condições para filtrar a consulta. **Comando opcional porém recomendável.** Sintaxe:
+
+  - **type**: string. o tipo de conjunção entre condições. Valores permitidos: "and" | "or". Só é considerado da segunda condição em diante.
+  - **condition**: string. A condição propriamente dita, no formato de query params.
+  - **param**: Json object. Os valores dos parâmetros da query do campo acima. Sintaxe:
+    - **nome do campo**: variant.
+    
+- **set**: Json object. Os valores para atualização. **Comando obrigatório.**
+    
+**Exemplo**
+```
+ "table": "rota",
+ "where": [
+   {
+     "condition": "idGrupoUsuario = :idGrupoUsuario",
+     "param": { "idGrupoUsuario": "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}" },
+   },   
+ ]
+ "set": { "tipoRota": 110002, "periodicidadeDias": 107000 }
+```
+
+O exemplo acima produzirá a seguinte query:
+
+```
+update from ROTA 
+  set TIPOROTA = @0, PERIDICIDADEDIAS = @1 
+  where idGrupoUsuario = @2 
+  -- PARAMS: {@0: 110002, @1: 107000, @2: "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}"}
+```
+
+## Insert
+
+### valores
+
+- **values**: Array de Json object com os valores a inserir. **Campo obrigatório.**
+    
+**Exemplo**
+```
+ "table": "rota",
+ "values": [
+   {
+     "name": "Rota Posto 1 - Turno dia",
+     "descricao": { "Rota turno do dia do posto 1" }
+   },   
+   {
+     "name": "Rota Posto 1 - Turno noite",
+     "descricao": { "Rota turno da noite do posto 1" }
+   },
+ ] 
+```
+
+O exemplo acima produzirá a seguinte query:
+
+```
+update from ROTA 
+  set TIPOROTA = @0, PERIDICIDADEDIAS = @1 
+  where idGrupoUsuario = @2 
+  -- PARAMS: {@0: 110002, @1: 107000, @2: "{1065F9D1-F24F-42A2-8A92-6B96A1C7CD79}"}
 ```
