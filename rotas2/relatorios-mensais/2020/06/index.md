@@ -16,3 +16,34 @@ Após realizar login, o ícone da conectividade será posicionado dentro do cabe
 Sem conectividade        |  Com conectividade
 :-----------------------:|:-----------------------:
 ![](images/App_off.jpg)  |  ![](images/App_on.jpg)
+
+## 2 - Continuando desenvolvimento (novas telas)
+
+### 2.1 - Leitura do código de barras
+
+<p align="center">
+  <img src="images/Barcode_ask.jpg" />
+</p>
+
+O input do código de barras pode ser feito manualmente ou através da câmera. Caso seja feito pela câmera, o leitor suporta códigos 1D (Code-128, Code-39, entre outros) e também 2D (QRCode).
+
+Código 1D                        |  Código 2D
+:-------------------------------:|:-------------------------------:
+![](images/Barcode_barcode.jpg)  |  ![](images/Barcode_qrcode.jpg)
+
+Na versão Android, o flash pode ser acionado, ao clicar no ícone correspondente, para leitura em locais de pouca luminosidade.
+
+### 2.2 - Interrupção da rota
+
+Interromper rota                 |  Opções de interrupção
+:--------------------------------:|:-------------------------------:
+![](images/Interromper_rota.jpg)  |  ![](images/Interromper_rota_opcoes.jpg)
+
+O motivo é um campo obrigatório, o comentário é um campo opcional.
+
+### 2.3 - Alteração do fluxo da rota
+
+<p align="center">
+  <img src="images/Alterar_fluxo.jpg" />
+</p>
+
