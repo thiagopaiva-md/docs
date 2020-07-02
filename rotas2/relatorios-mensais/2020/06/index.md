@@ -64,3 +64,20 @@ O campo sensitivo é representado por uma caixa de seleção. Ao tocar, o usuár
 Campo sensitivo: Opções                 |  Campo preenchido
 :--------------------------------------:|:-------------------------------:
 ![](images/Input_sensorial_opcoes.jpg)  |  ![](images/Input_sensorial.jpg)
+
+### 2.5 - Gravação de áudio
+
+O tempo de gravação de áudio é limitado em um minuto.
+
+Pronto para gravar            |  Gravando 
+:----------------------------:|:-------------------------------:
+![](images/Gravar_audio.jpg)  |  ![](images/Gravar_audio_gravando.jpg)
+
+### 2.6 - Gravação de foto / vídeo
+
+O tempo de vídeo é limitado em 15 segundos.
+
+<p align="center">
+  <img src="images/Foto_video.jpg" />
+</p>
+
