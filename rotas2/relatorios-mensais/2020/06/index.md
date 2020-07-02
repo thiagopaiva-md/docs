@@ -59,7 +59,7 @@ O campo instrumentado é representado por um input de texto. O valor deverá ser
 
 ### 2.4 - Preenchimento dos valores: Campo sensitivo
 
-O campo sensitivo é representado por uma caixa de seleção. Ao tocar, o usuário deverá selecionar o valor da leitura. O ícone "dedo levantado" representa a resposta esperada. O ícone "folhas de papel" representa que tal opção requer a abertura de nota técnica.
+O campo sensitivo é representado por uma caixa de seleção. Ao tocar, o usuário deverá selecionar o valor da leitura. O ícone "dedo levantado" representa a resposta esperada, e sua seleção colorirá o campo de verde. O ícone "folhas de papel" representa que tal opção requer a abertura de nota técnica, e sua seleção colorirá o campo de vermelho.
 
 Campo sensitivo: Opções                 |  Campo preenchido
 :--------------------------------------:|:-------------------------------:
