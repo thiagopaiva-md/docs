@@ -5,4 +5,8 @@ Com esta nova funcionalidade, será possível visualizar no servidor, em tempo r
 ### 1.1 - Ícone de status da conexão
 Para determinar se o coletor está online e apto para a transferência de dados, foi adicionado um ícone na interface, com o símbolo de uma conexão wi-fi. A conectividade é verificada periodicamente de forma automática. Caso seja possível conectar-se, o ícone será exibido na cor verde. Caso contrário, será exibido na cor vermelha.
 
-![](images/welcome.jpg)
+Sem conectividade              |  Com conectividade
+:-----------------------------:|:-----------------------------:
+![](images/Login_off_msg.jpg)  |  ![](images/Login_on_msg.jpg)
+
+Interessante notar que, ao tocar sobre o ícone que representa a conectividade, será exibida uma mensagem no formato "toast" informando o status da conexão. A mensagem desaparece automaticamente após aproximadamente 3 segundos.
