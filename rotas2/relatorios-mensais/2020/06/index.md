@@ -10,3 +10,9 @@ Sem conectividade              |  Com conectividade
 ![](images/Login_off_msg.jpg)  |  ![](images/Login_on_msg.jpg)
 
 Interessante notar que, ao tocar sobre o ícone que representa a conectividade, será exibida uma mensagem no formato "toast" informando o status da conexão. A mensagem desaparece automaticamente após aproximadamente 3 segundos.
+
+Após realizar login, o ícone da conectividade será posicionado dentro do cabeçalho, ali permanecendo durante todo o ciclo de vida da aplicação.
+
+Sem conectividade        |  Com conectividade
+:-----------------------:|:-----------------------:
+![](images/App_off.jpg)  |  ![](images/App_on.jpg)
