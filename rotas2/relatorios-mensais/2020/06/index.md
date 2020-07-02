@@ -81,3 +81,14 @@ O tempo de vídeo é limitado em 15 segundos.
   <img src="images/Foto_video.jpg" />
 </p>
 
+## 3 - Próximos passos
+
+### 3.1 - Criação de um adaptador para tratamento das notas técnicas
+
+Na próxima etapa do desenvolvimento, será desenvolvido um adaptador para a descarga das notas técnicas. Isto garantirá uma maior flexibilidade na aplicação, caso futuramente os parâmetros das notas técnicas passem por mudanças ou até mesmo sejam reformulados.
+
+### 3.2 - Arquitetura do adaptador
+
+<p align="center">
+  <img src="images/Barramento_notas.jpg" />
+</p>
