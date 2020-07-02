@@ -43,8 +43,24 @@ O motivo é um campo obrigatório, o comentário é um campo opcional.
 
 ### 2.3 - Alteração do fluxo da rota
 
+É possível alterar o fluxo da rota conforme a necessidade do usuário. Caso opte pela alteração, o usuário deverá justificar.
+
 Alterar fluxo                  |  Justificar alteração
 :-----------------------------:|:-------------------------------:
 ![](images/Alterar_fluxo.jpg)  |  ![](images/Alterar_fluxo_justificar.jpg)
 
-É possível alterar o fluxo da rota conforme a necessidade do usuário. Caso opte pela alteração, o usuário deverá justificar.
+### 2.4 - Preenchimento dos valores: Campo instrumentado
+
+O campo instrumentado é representado por um input de texto. O valor deverá ser preenchido de acordo com o valor lido no instrumento correspondente. Caso o valor esteja dentro de uma faixa de validação previamente configurada, o campo será preenchido na cor verde. Caso contrário, será preenchido na cor vermelha.
+
+<p align="center">
+  <img src="images/Input_instrumentado.jpg" />
+</p>
+
+### 2.4 - Preenchimento dos valores: Campo sensitivo
+
+O campo sensitivo é representado por uma caixa de seleção. Ao tocar, o usuário deverá selecionar o valor da leitura. O ícone "dedo levantado" representa a resposta esperada. O ícone "folhas de papel" representa que tal opção requer a abertura de nota técnica.
+
+Campo sensitivo: Opções                 |  Campo preenchido
+:--------------------------------------:|:-------------------------------:
+![](images/Input_sensorial_opcoes.jpg)  |  ![](images/Input_sensorial.jpg)
