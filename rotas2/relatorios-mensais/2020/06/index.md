@@ -43,7 +43,8 @@ O motivo é um campo obrigatório, o comentário é um campo opcional.
 
 ### 2.3 - Alteração do fluxo da rota
 
-<p align="center">
-  <img src="images/Alterar_fluxo.jpg" />
-</p>
+Alterar fluxo                  |  Justificar alteração
+:-----------------------------:|:-------------------------------:
+![](images/Alterar_fluxo.jpg)  |  ![](images/Alterar_fluxo_justificar.jpg)
 
+É possível alterar o fluxo da rota conforme a necessidade do usuário. Caso opte pela alteração, o usuário deverá justificar.
