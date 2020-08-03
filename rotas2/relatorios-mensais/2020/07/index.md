@@ -76,4 +76,4 @@ Neste exemplo, temos o detalhe de todas as rotas concluídas no último turno, b
 
 As telas aqui exibidas tratam-se protótipos e não representam necessariamente o produto final.
 
-Com a comunicação já implementada, a próxima etapa do processo será implementar as telas propostas neste documento.
+Com a comunicação já implementada, a próxima etapa do processo será implementar as telas propostas neste documento, finalizando assim uma funcionalidade entregável do projeto, que é a comunicação em tempo real entre o coletor de dados e o sistema MDM.
