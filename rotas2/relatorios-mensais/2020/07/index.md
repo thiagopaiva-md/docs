@@ -26,11 +26,32 @@ Aplicação sem conexão: Os dados são armazenados apenas na memória interna d
   Aplicação conectada: Dados continuam sendo armazenados na memória, porém também são enviados ao servidor.
 </p>
 
-#### 1.2 - Dados disponíveis para consulta
+#### 1.2 - Informações sobre o dashboard
+
+#### 1.2.1 - Dados disponíveis
 
 - Rotas em execução no momento
 - Ponto atual da execução das rotas
 - Percentuais de conclusão
 - Informações sobre temporização
 
-### 1.3 - Informações sobre o dashboard
+#### 1.2.1 - Visão geral
+
+<p align="center">
+  <img src="images/dashboard.jpg" />
+</p>
+
+
+#### 1.2.2 - Descrição dos campos
+
+Todos os dados são exibidos em tempo real.
+
+- **Rotas em execução agora:** Exibe um contador da quantidade de rotas que estão sendo executadas em determinado momento.
+- **Rotas disponíveis:** Informa a quantidade de rotas que estão disponíveis no momento. Rotas em execução não fazem parte desta contagem, considerando-se então apenas as rotas que ainda não foram iniciadas.
+- **Rotas indisponíveis:** Informa o contador de rotas que não estão disponíveis no momento. Os motivos podem variar, as possíveis causas são:
+  - *Futuramente disponível:* A rota foi programada para estar disponível apenas em um futuro próximo.
+  - *Fora de turno:* Aplicável a rotas com periodicidade diária, a rota pertence a um outro turno que não o atual.
+  - *Fora do dia:* Aplicável a rotas com periodicidade semanal ou mensal, a rota deve ser executada em um dia diferente do atual.  
+- **Rotas concluídas:** Informa a contagem das rotas que já tiveram seus dados coletados e enviados ao servidor.
+
+- **Em execução agora:** Esta lista exibe as rotas que estão sendo executadas em determinado momento. Ela funciona no padrão "mestre-detalhe" em conjunto com os dados que estão na parte inferior da tela.
