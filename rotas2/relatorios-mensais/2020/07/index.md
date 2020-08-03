@@ -54,4 +54,10 @@ Todos os dados são exibidos em tempo real.
   - *Fora do dia:* Aplicável a rotas com periodicidade semanal ou mensal, a rota deve ser executada em um dia diferente do atual.  
 - **Rotas concluídas:** Informa a contagem das rotas que já tiveram seus dados coletados e enviados ao servidor.
 
-- **Em execução agora:** Esta lista exibe as rotas que estão sendo executadas em determinado momento. Ela funciona no padrão "mestre-detalhe" em conjunto com os dados que estão na parte inferior da tela.
+- **Em execução agora:** Esta lista exibe as rotas que estão sendo executadas em determinado momento. Ela funciona no padrão "mestre-detalhe" em conjunto com os dados que estão na parte inferior da tela, isto é, ao clicar em uma das rotas disponíveis na lista, os componentes inferiores são populados com dados relacionados à rota selecionada.
+
+- **Dados coletados:** Este componente exibirá as respostas que estão sendo coletadas na rota em andamento.
+
+- **Métricas de tempo:** Este componente é o responsável por exibir a temporização das rotas. Os detalhes incluem tempos de deslocamento e o tempo gasto com a leitura de dados.
+- **Progresso:** Informação gráfica sobre o percentual de conclusão da rota, onde são exibidos os dados relativos ao que já foi coletado (campo azul) e o que ainda está por coletar (campo cinza).
+- **Tempo decorrido:** Exibe um contador de tempo da rota selecionada. 
