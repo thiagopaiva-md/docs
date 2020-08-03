@@ -61,3 +61,11 @@ Todos os dados são exibidos em tempo real.
 - **Métricas de tempo:** Este componente é o responsável por exibir a temporização das rotas. Os detalhes incluem tempos de deslocamento e o tempo gasto com a leitura de dados.
 - **Progresso:** Informação gráfica sobre o percentual de conclusão da rota, onde são exibidos os dados relativos ao que já foi coletado (campo azul) e o que ainda está por coletar (campo cinza).
 - **Tempo decorrido:** Exibe um contador de tempo da rota selecionada. 
+
+### 1.2.3 - Detalhes do status das rotas
+
+Ao clicar nos cards do topo da tela (Rotas em execução agora, Rotas disponíveis, Rotas indisponíveis ou Rotas concluídas), é possível conferir os detalhes do assunto em questão. No exemplo abaixo, temos a interface de rotas concluídas. Ao clicar em um dos cards, a seguinte interface será exibida:
+
+<p align="center">
+  <img src="images/detalhe_dashboard.jpg" />
+</p>
