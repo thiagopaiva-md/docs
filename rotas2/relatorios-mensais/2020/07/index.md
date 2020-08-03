@@ -69,3 +69,11 @@ Ao clicar nos cards do topo da tela (Rotas em execução agora, Rotas disponíve
 <p align="center">
   <img src="images/detalhe_dashboard.jpg" />
 </p>
+
+Neste exemplo, temos o detalhe de todas as rotas concluídas no último turno, bem como seu horário de conclusão.
+
+# 2 - Próximos passos
+
+As telas aqui exibidas tratam-se protótipos e não representam necessariamente o produto final.
+
+Com a comunicação já implementada, a próxima etapa do processo será implementar as telas propostas neste documento.
