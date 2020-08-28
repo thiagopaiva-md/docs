@@ -17,3 +17,9 @@ A arquitetura da comunicação RPC é ilustrada conforme a figura a seguir:
 <p align="center">
   <img src="images/RPC.jpg" />
 </p>
+
+## 2 - Disponibilização de informações
+
+A seguir, serão listadas as informações disponibilizadas do Sistema MDM para consulta no portal EAMon.
+
+### 2.1 - Importação de dados
