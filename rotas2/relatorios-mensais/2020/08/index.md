@@ -32,12 +32,31 @@ A arquitetura da comunicação entre EAMon e o gerente é ilustrada a seguir:
 
 ### 2.1 - Importar dados
 
-**Objetivo:** Relizar a importação de uma planilha excel com dados de registro, em formato csv pré-definido, para o banco de dados do MDM.
+**Objetivo:** Relizar a importação de uma planilha excel com dados de registro, em formato csv pré-definido, para o banco de dados do Sistema MDM.
 
 **Parâmetros de entrada:**
 
 Nome       |  Tipo
 :---------:|:---------------:
+plantId    | string
+operation  | number
+inputData  | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string
+
+### 2.2 - Executar análise personalizada
+
+**Objetivo:** Executar, dentro da interface do EAMon, uma análise personalizada cadastrada no Sistema MDM.
+
+Nome       |  Tipo
+:---------:|:---------------:
+plantId    | string
+operation  | number
 inputData  | string
 
 **Parâmetros de saída:**
