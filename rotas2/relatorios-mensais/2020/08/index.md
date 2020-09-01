@@ -22,6 +22,14 @@ A arquitetura da comunicação RPC é ilustrada conforme a figura a seguir:
 
 A disponibilização de informações será realizada do lado do sistema MDM a partir de um novo módulo, denominado "Gerente EAMon". O portal deverá realizar as requisições para este componente. A seguir, serão listadas as informações disponibilizadas do Sistema MDM para consulta no portal EAMon.
 
+### 2.1 - Arquitetura de comunicação
+
+A arquitetura da comunicação é ilustrada a seguir:
+
+<p align="center">
+  <img src="images/Arq_Gerente.jpg" />
+</p>
+
 ### 2.1 - Importação de dados
 
 
