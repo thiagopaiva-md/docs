@@ -109,3 +109,18 @@ content    | string ou object[]
 ### 2.4 - Ferramentas de análise
 
 #### 2.4.1 - Análise comparativa
+
+**Objetivo:** Executar a ferramenta "análise comparativa" no portal EAMon.
+
+**Parâmetros de entrada:**
+Nome       |  Tipo
+:---------:|:---------------:
+plantId    | string
+operation  | number
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
