@@ -87,4 +87,25 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
-**Atenção:** A primeira resposta (padrão) para a plotagem, será com os dados de data e hora. Caso o desejo seja plotagem por pontos de operação, a requisição da etapa 2 deverá ser repetida, desta vez fornecendo o parâmetro "poId", que se refere ao ID do ponto de operação.
+**Atenção:** A primeira resposta (padrão) para a plotagem será com os dados de data e hora. Caso o desejo seja plotagem por pontos de operação, a requisição da etapa 2 deverá ser repetida, desta vez fornecendo o parâmetro "poId", que se refere ao ID do ponto de operação.
+
+### 2.3 - Atributos
+
+**Objetivo:** Visualizar os atributos cadastrados no Sistema MDM.
+
+**Parâmetros de entrada:**
+Nome       |  Tipo
+:---------:|:---------------:
+plantId    | string
+operation  | number
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+### 2.4 - Ferramentas de análise
+
+#### 2.4.1 - Análise comparativa
