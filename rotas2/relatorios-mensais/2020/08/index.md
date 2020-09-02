@@ -53,16 +53,38 @@ content    | string
 
 **Objetivo:** Executar, dentro da interface do EAMon, uma análise personalizada cadastrada no Sistema MDM.
 
+Esta requisição será realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de análises cadastradas no MDM.
+
+**Parâmetros de entrada:**
 Nome       |  Tipo
 :---------:|:---------------:
 plantId    | string
 operation  | number
-inputData  | string
 
 **Parâmetros de saída:**
 
 Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
-content    | string
+content    | string ou object[]
 
+**Etapa 2:** Consultar os sinais
+
+**Parâmetros de entrada:**
+Nome       |  Tipo
+:---------:|:---------------:
+plantId    | string
+operation  | number
+analysisId | string
+poId?      | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Atenção:** A primeira resposta (padrão) para a plotagem, será com os dados de data e hora. Caso o desejo seja plotagem por pontos de operação, a requisição da etapa 2 deverá ser repetida, desta vez fornecendo o parâmetro "poId", que se refere ao ID do ponto de operação.
