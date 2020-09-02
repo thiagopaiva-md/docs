@@ -110,13 +110,16 @@ content    | string ou object[]
 
 #### 2.4.1 - Análise comparativa
 
-**Objetivo:** Executar a ferramenta "análise comparativa" no portal EAMon.
+**Objetivo:** Executar a ferramenta "análise comparativa" no portal EAMon, consultando os sinais gravados no sistema MDM.
 
 **Parâmetros de entrada:**
-Nome       |  Tipo
-:---------:|:---------------:
-plantId    | string
-operation  | number
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+monitoredPointsIds | string[]
+startDateTime      | Date
+endDateTime        | Date
 
 **Parâmetros de saída:**
 
@@ -124,3 +127,79 @@ Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
 content    | string ou object[]
+
+**Atenção:** A exemplo da análise personalizada, a primeira resposta (padrão) para a plotagem será com os dados de data e hora. Caso o desejo seja plotagem por pontos de operação, a requisição da etapa 2 deverá ser repetida, desta vez fornecendo o parâmetro "poId", que se refere ao ID do ponto de operação.
+
+#### 2.4.1 - Análise sequencial
+
+**Objetivo:** Executar a ferramenta "análise sequencial" no portal EAMon, consultando os sinais gravados no sistema MDM.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+monitoredPointsIds | string[]
+startDateTime      | Date
+endDateTime        | Date
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Atenção:** A exemplo da análise personalizada, a primeira resposta (padrão) para a plotagem será com os dados de data e hora. Caso o desejo seja plotagem por pontos de operação, a requisição da etapa 2 deverá ser repetida, desta vez fornecendo o parâmetro "poId", que se refere ao ID do ponto de operação.
+
+### 2.5 - Diagnóstico
+
+### 2.6 - Coleta Offline
+
+#### 2.6.1 - Visualizar turnos
+
+**Objetivo:** Visualizar os turnos dos usuários cadastrados no Sistema MDM.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+#### 2.6.2 - Visualizar grupos de usuário
+
+**Objetivo:** Visualizar os grupos de usuários cadastrados no Sistema MDM.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+#### 2.7 - Relatórios
+
+**Objetivo:** Visualizar os relatórios do Sistema MDM dentro do portal EAMon.
+
+**Relatórios disponíveis:*** 
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
