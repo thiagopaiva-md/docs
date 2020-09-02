@@ -154,6 +154,22 @@ content    | string ou object[]
 
 ### 2.5 - Diagnóstico
 
+**Objetivo:** Executar o diagnóstico do Sistema MDM dentro do portal EAMon.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+EqpId              | string
+startDateTime      | Date
+endDateTime        | Date
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
 ### 2.6 - Coleta Offline
 
 #### 2.6.1 - Visualizar turnos
