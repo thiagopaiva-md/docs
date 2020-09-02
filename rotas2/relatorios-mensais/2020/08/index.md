@@ -190,7 +190,104 @@ content    | string ou object[]
 
 **Objetivo:** Visualizar os relatórios do Sistema MDM dentro do portal EAMon.
 
-**Relatórios disponíveis:*** 
+#### 2.7.1 - Limites de alarme
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+eqpId              | string
+columns            | string[]
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+#### 2.7.2 - Pontos monitorados
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+eqpId              | string
+columns            | string[]
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+#### 2.7.3 - Alarmados
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+eqpId              | string
+startDateTime      | Date
+endDateTime        | Date
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+#### 2.7.4 - Grupo de pontos monitorados
+
+**Parâmetros de entrada:**
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+plantId                  | string
+operation                | number
+eqpType                  | number
+shouldListMonitoredPoints| boolean
+
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+#### 2.7.5 - Funcionamento do Sistema
+
+**Parâmetros de entrada:**
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+plantId                  | string
+operation                | number
+startDateTime            | Date
+endDateTime              | Date
+
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+#### 2.7.6 - Falhas
+
+**Atenção:** Este relatório necessita ser consultado em duas etapas.
+
+**Primeira etapa:** Recuperar dados de classe falhas.
 
 **Parâmetros de entrada:**
 Nome               |  Tipo
@@ -198,8 +295,34 @@ Nome               |  Tipo
 plantId            | string
 operation          | number
 
-Nome       |  Tipo
-:---------:|:---------------:
-status     | number 
-content    | string ou object[]
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
 
+**Segunda etapa:** Recuperar dados de classe falhas.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+classId            | string
+columns            | string[]
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+
+  - Conhecimento
+  - Rotas
+    - Em branco
+    - Carregar registros
+    - Execução
+  
