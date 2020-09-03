@@ -335,10 +335,162 @@ content?           | string
 xml?               | string
 stylesheet?        | string
 
+#### 2.7.7 - Conhecimento
 
-  - Conhecimento
-  - Rotas
-    - Em branco
-    - Carregar registros
-    - Execução
-  
+**Parâmetros de entrada:**
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+plantId                  | string
+operation                | number
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+images?            | string[]
+
+#### 2.7.8 - Rotas
+
+##### 2.7.8.1 - Em Branco
+
+**Atenção:** Este relatório necessita ser consultado em duas etapas.
+
+**Primeira etapa:** Recuperar dados de rotas.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
+
+**Segunda etapa:** Montar o relatório.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+routeId            | string
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+##### 2.7.8.2 - Carregar registros
+
+**Atenção:** Este relatório necessita ser consultado em três etapas.
+
+**Primeira etapa:** Recuperar dados de rotas.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
+
+**Segunda etapa:** Recuperar os registros da rota.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+routeId            | string
+startDateTime      | Date
+endDateTime        | Date
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
+
+**Terceira etapa:** Geração do relatório.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+routeId            | string
+recordId           | string
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
+
+##### 2.7.8.3 - Execução
+
+**Atenção:** Este relatório necessita ser consultado em três etapas.
+
+**Primeira etapa:** Recuperar dados de rotas.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
+
+**Segunda etapa:** Recuperar os registros da rota.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+routeId            | string
+startDateTime      | Date
+endDateTime        | Date
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
+
+**Terceira etapa:** Geração do relatório.
+
+**Parâmetros de entrada:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+plantId            | string
+operation          | number
+routeId            | string
+recordId           | string
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content?           | string
+xml?               | string
+stylesheet?        | string
