@@ -27,7 +27,7 @@ O Gerente EAMon é subdividido em dois módulos. O primeiro módulo é o "Gerent
 A arquitetura da comunicação entre EAMon e o gerente é ilustrada a seguir:
 
 <p align="center">
-  <img src="images/Arq_Gerente_EAMon.jpg" />
+  <img src="images/Arq_Gerente_Eamon.jpg" />
 </p>
 
 A seguir, serão listadas as informações disponibilizadas do Sistema MDM para consulta no portal EAMon.
