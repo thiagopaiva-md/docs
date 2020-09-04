@@ -498,3 +498,19 @@ status             | number
 content?           | string
 xml?               | string
 stylesheet?        | string
+
+## 2.8 - Árvore de análise
+
+**Objetivo:** Trazer para o EAMon toda a informação da árvore de análise do Sistema MDM, incluindo a estrutura de equipamentos, subsistemas, componentes e pontos monitorados.
+
+**Parâmetros de entrada:**
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+plantId                  | string
+operation                | number
+
+**Parâmetros de saída:**
+Nome               |  Tipo
+:-----------------:|:---------------:
+status             | number 
+content            | string ou object[]
