@@ -27,7 +27,7 @@ A MDM API é subdividida em dois módulos. O primeiro módulo é o "MDM API Rout
 A arquitetura da comunicação entre EAMon e MDM é ilustrada a seguir:
 
 <p align="center">
-  <img src="images/Arq_MDM_API.jpg" />
+  <img src="images/Arq_MDM_API_2.jpg" />
 </p>
 
 A seguir, serão listadas as informações disponibilizadas do Sistema MDM para consulta no portal EAMon.
