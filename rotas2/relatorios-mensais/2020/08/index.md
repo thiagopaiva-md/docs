@@ -321,7 +321,7 @@ Nome               |  Tipo
 status             | number 
 content            | string ou object[]
 
-**Segunda etapa:** Recuperar dados de classe falhas.
+**Segunda etapa:** Montagem do relatório.
 
 **Parâmetros de entrada:**
 Nome               |  Tipo
