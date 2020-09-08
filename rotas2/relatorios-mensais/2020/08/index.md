@@ -20,14 +20,14 @@ A arquitetura da comunicação RPC é ilustrada conforme a figura a seguir:
 
 ### 1.2 - Comunicação entre os sistemas
 
-A disponibilização de informações será realizada do lado do sistema MDM a partir de um novo módulo, denominado "Gerente EAMon". O portal deverá realizar as requisições para este componente. 
+A disponibilização de informações será realizada do lado do sistema MDM a partir de um novo módulo, denominado "MDM API". O portal deverá realizar as requisições para este componente. 
 
-O Gerente EAMon é subdividido em dois módulos. O primeiro módulo é o "Gerente EAMon Router", que será um centralizador de informações, responsável por disparar as requisições para os módulos presentes nas usinas. O segundo módulo é o "Gerente EAMon Server", que ficará em cada um dos servidores das usinas, recebendo as requisições e disponibilizando os dados.
+A MDM API é subdividida em dois módulos. O primeiro módulo é o "MDM API Router", que será um centralizador de informações, responsável por disparar as requisições para os módulos presentes nas usinas. O segundo módulo é o "MDM API Server", que ficará em cada um dos servidores das usinas, recebendo as requisições e disponibilizando os dados.
 
-A arquitetura da comunicação entre EAMon e o gerente é ilustrada a seguir:
+A arquitetura da comunicação entre EAMon e MDM é ilustrada a seguir:
 
 <p align="center">
-  <img src="images/Arq_Gerente_Eamon.jpg" />
+  <img src="images/Arq_MDM_API.jpg" />
 </p>
 
 A seguir, serão listadas as informações disponibilizadas do Sistema MDM para consulta no portal EAMon.
