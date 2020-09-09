@@ -15,15 +15,21 @@ Foi realizada uma abordagem qualitativa, priorizando o maior número de situaç�
 
 ### 1.3 - Resultados obtidos
 
-O erro mais comum foi o erro do tipo "cannot read property of undefined", que acontece quando era necessário atribuir valores a determinadas variáveis, porém estas não estavam inicializadas. Com os testes unitários, foi possível encontrar e corrigir estas exceções.
+O erro mais comum foi o erro do tipo "cannot read property of undefined", que acontece quando é necessário atribuir valores a determinadas variáveis, porém estas não estavam inicializadas. Com os testes unitários, foi possível encontrar e corrigir estas exceções.
 
 ## 2 - Teste de comunicação
 
 ### 2.1 - Objetivo
 
-Assegurar a correta comunicação entre o coletor e o Sistema MDM.
+Assegurar a correta comunicação entre o coletor e o Sistema MDM, através da integração com o barramento de comunicação RabbitMQ.
 
-### 2.2 - 
+### 2.2 - Método utilizado
+
+Os testes foram baseados nos princípios de implementação do RabbitMQ, avaliando a correta criação das conexões, canais e filas.
+
+### 2.3 - Resultados obtidos
+
+Após identificação de falhas pontuais na comunicação, as mesmas foram corrigidas.
 
 ## 3 - Testes de interface
 
