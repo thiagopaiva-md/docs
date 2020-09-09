@@ -36,11 +36,11 @@ Após identificação de falhas pontuais na comunicação, as mesmas foram corri
 ### 3.1 - Objetivo
 
 O teste de interface tem como objetivo garantir o melhor fluxo de interação do usuário com o sistema. O teste visa garantir um sistema interativo que seja operado de maneira eficiente, sem deixar de ser agradável para o usuário final.\
-O principal critério de avaliação é a eficácia da interação humano-computador. A partir da eficiência desta interação, avaliamos os recursos empregados (tempo, passos desnecessário, busca de ajuda, etc) e, a partir destes dados, obter índices de satisfação ou insatisfação que possa trazer ao usuário.
+O principal critério de avaliação é a eficácia da interação humano-computador. A partir da eficiência desta interação, avaliamos os recursos empregados (tempo, passos desnecessários, busca de ajuda, etc) e, a partir destes dados, podemos realizar a avaliação de índices de satisfação ou insatisfação que estes resultados possam trazer ao usuário.
 
 ### 3.2 - Método utilizado
 
-Os testes foram implementados utilizando modelos de protótipos em papel e no computador. As técnicas de verificação se basearam nos conhecimentos ergonômicos e na experiência dos avaliadores que interagindo com a interface identificaram alguns problemas de interação humano-computador.
+Os testes foram implementados utilizando modelos de protótipos em papel e no computador. As técnicas de verificação se basearam nos conhecimentos ergonômicos e na experiência dos avaliadores que, interagindo com a interface, identificaram alguns problemas de interação humano-computador.
 
 ### 3.3 - Resultados obtidos
 
