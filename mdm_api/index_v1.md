@@ -53,6 +53,7 @@ Nome       |  Tipo
 :---------:|:---------------:
 databaseAlias    | string
 operation        | string
+analysisId       | string
 
 **Parâmetros de saída:**
 
