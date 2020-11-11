@@ -46,7 +46,7 @@ content    | string ou object[]
 
 **Etapa 2:** Executar a análise solicitada.
 
-**Nome da operação Etapa 1:** core_getCustomAnalysisData
+**Nome da operação Etapa 2:** core_getCustomAnalysisData
 
 **Parâmetros de entrada:**
 Nome       |  Tipo
