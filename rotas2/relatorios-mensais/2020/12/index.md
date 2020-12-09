@@ -2,7 +2,7 @@
 
 ## Utilização de websockets
 
-Durante o mês de dezembro de 2020, o foco do desenvolvimento foi a melhoria da comunicação cliente x servidor. Na nova versão utilizaremos uma tecnologia denominada websocket.
+Durante o mês de dezembro de 2020, o foco do desenvolvimento foi a melhoria da comunicação cliente x servidor. Na nova versão, utilizaremos uma tecnologia denominada websocket.
 
 ### Sobre os websockets
 
@@ -20,5 +20,13 @@ Para as funcnalidades da aplicação onde se aplicam o padrão de *data streamin
 
 ### Arquitetura
 
+<p align="center">
+  <img src="images/Arq.jpg" />
+</p>
 
+Neste desenho de arquitetura, podemos ver a conexão sendo estabelecida e persistida. Notamos também o padrão de comunicação *request-response*, bem como o streaming de dados bi-direcional, tanto do servidor para coletor, quanto do coletor para o servidor, sem a necessidade de um *request*.
 
+### Próximos passos
+
+- Finalização da implementação
+- Testes
