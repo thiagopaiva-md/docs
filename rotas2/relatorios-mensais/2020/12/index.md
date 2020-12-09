@@ -12,7 +12,13 @@ O websocket é um protocolo de comunicação padronizado para ambientes web. O w
 
 A principal diferença entre os websockets e o protocolo HTTP é a comunicação em duas vidas, onde trabalhamos com o padrão *request - response.* Isto facilita a tranferência de dados em tempo real entre cliente e servidor. Outra diferença é a possibilidade de transferência de dados do servidor para o cliente sem a existência de uma requisição explícita. Esta forma de comunicação é conhecida como *data streaming.*
 
-## Frameworks utilizados
+### Implementação e frameworks utilizados
 
-Para as funcionalidades da aplicação onde se aplicam o padrão de comunicação *request-response*, será utilizado o framework **Express.js.**
-Para as funcnalidades da aplicação onde se aplicam o padrão de *data streaming* e *real time*, será utilizado o framework **socket.io**.
+Tanto o cliente quanto o servidor necessitam implementar a tecnologia de websockets para que a comunicação seja estabelecida.\
+Para as funcionalidades da aplicação onde se aplicam o padrão de comunicação *request-response*, será utilizado, do lado do servidor, o framework **Express.js.**. Já no lado do cliente, utilizaremos o framework **Axios**.\
+Para as funcnalidades da aplicação onde se aplicam o padrão de *data streaming* e *real time*, será utilizado, do lado do servidor, o framework **socket.io**. Já no lado do cliente, utilizaremos o framwork **socket.io-client**.
+
+### Arquitetura
+
+
+
