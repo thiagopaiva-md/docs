@@ -82,7 +82,7 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
-## 4 - Turnos (visualizar)
+## 4 - Grupos de usuário (visualizar)
 
 **Objetivo:** Trazer para o EAMon os dados de grupos de usuários cadastrados.
 
