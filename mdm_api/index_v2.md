@@ -61,3 +61,43 @@ Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
 content    | string ou object[]
+
+## 3 - Turnos (visualizar)
+
+**Objetivo:** Trazer para o EAMon os dados de turnos cadastrados.
+
+**Nome da operação:** core_getShifts
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+databaseAlias            | string
+operation                | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+## 4 - Turnos (visualizar)
+
+**Objetivo:** Trazer para o EAMon os dados de grupos de usuários cadastrados.
+
+**Nome da operação:** core_getUserGroups
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo
+:-----------------------:|:---------------:
+databaseAlias            | string
+operation                | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
