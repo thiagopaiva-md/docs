@@ -41,7 +41,7 @@ Também já está disponível a visualização de dados de grupos de usuários. 
 
   - Nome do grupo;
   - Descrição;
-  - Tipo de nota que este grupo pode gerenciar.
+  - Tipo de nota técnica que este grupo pode gerenciar.
   
 ### Relatórios
 
