@@ -101,3 +101,51 @@ Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
 content    | string ou object[]
+
+## 5 - Relatório de Rotas (Em branco)
+
+**Objetivo:** Visualizar os relatório de rotas do Sistema MDM, sem dados preenchidos. Este relatório é útil para um cenário onde a rota precise ser impressa para ser executada manualmente.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de rotas cadastradas no MDM.
+
+**Nome da operação Etapa 1:** core_getRoutes
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter os relatórios.
+
+**Nome da operação Etapa 1:** core_getRouteBlankReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+routeId          | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+OBS: No content terá um object com os dados: 
+
+**xml:** representa o arquivo xml com os dados de rotas.\
+**xsl:** representa o arquivo xsl com os dados de estilização do relatório.
