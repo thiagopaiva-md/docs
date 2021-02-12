@@ -206,7 +206,6 @@ Nome       |  Tipo
 :---------:|:---------------:
 databaseAlias    | string
 operation        | string
-routeId          | string
 recordId         | string
 
 **Parâmetros de saída:**
