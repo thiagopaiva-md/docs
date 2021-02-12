@@ -145,7 +145,54 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
-OBS: No content terá um object com os dados: 
+**Em caso de sucesso, o content será um object com os seguintes dados:**
 
 **xml:** representa o arquivo xml com os dados de rotas.\
 **xsl:** representa o arquivo xsl com os dados de estilização do relatório.
+
+## 6 - Relatório de rotas (exibir dados coletados)
+
+**Objetivo:** Visualizar os relatório de rotas do Sistema MDM, contendo os valores coletados pelos operadores.
+
+Esta requisição é realizada em 3 etapas.
+
+**Etapa 1:** Obter a lista de rotas cadastradas no MDM.
+
+**Nome da operação Etapa 1:** core_getRoutes
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter os registros correspondentes da rota selecionada. Será necessário fornecer uma data de início e uma data fim para a busca de registros.
+
+**Nome da operação Etapa 2:** core_getRouteDataRecords
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+routeId          | string
+startDateTime    | Date
+endDateTime      | Date
+
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
