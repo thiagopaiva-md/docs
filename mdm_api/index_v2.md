@@ -176,7 +176,7 @@ content    | string ou object[]
 
 **Etapa 2:** Obter os registros correspondentes da rota selecionada. Será necessário fornecer uma data de início e uma data fim para a busca de registros.
 
-**Nome da operação Etapa 2:** core_getRouteDataRecords
+**Nome da operação Etapa 2:** core_getRouteRecords
 
 **Parâmetros de entrada:**
 
