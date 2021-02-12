@@ -196,3 +196,28 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+**Etapa 3:** Obter o relatório.
+
+**Nome da operação Etapa 3:** core_getRouteDataReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+routeId          | string
+recordId         | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Em caso de sucesso, o content será um object com os seguintes dados:**
+
+**xml:** representa o arquivo xml com os dados de rotas.\
+**xsl:** representa o arquivo xsl com os dados de estilização do relatório.
+
