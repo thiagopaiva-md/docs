@@ -147,8 +147,8 @@ content    | string ou object[]
 
 **Em caso de sucesso, o content será um object com os seguintes dados:**
 
-**xml:** representa o arquivo xml com os dados de rotas.\
-**xsl:** representa o arquivo xsl com os dados de estilização do relatório.
+**xml:** representa o arquivo xml com os dados de rotas. Deve ser salvo em disco para visualização com o nome de sua preferência, com **extensão .xml.**\
+**xsl:** representa o arquivo xsl com os dados de estilização do relatório. Deve ser salvo em disco para visualização **com o nome styles.xsl**.
 
 ## 6 - Relatório de rotas (exibir dados coletados)
 
@@ -217,6 +217,77 @@ content    | string ou object[]
 
 **Em caso de sucesso, o content será um object com os seguintes dados:**
 
-**xml:** representa o arquivo xml com os dados de rotas.\
-**xsl:** representa o arquivo xsl com os dados de estilização do relatório.
+**xml:** representa o arquivo xml com os dados de rotas. Deve ser salvo em disco para visualização com o nome de sua preferência e **com extensão .xml.**\
+**xsl:** representa o arquivo xsl com os dados de estilização do relatório. Deve ser salvo em disco para visualização **com o nome style.xsl.**\
+**js:** representa o arquivo js que interpreta os anexos. Deve ser salvo em disco para visualização **com o nome relatorio-rotas.js.**\
+**attachments:** representa um array JSON com os anexos codificados em base-64. Devem ser salvos em disco para visualização, **convertendo-se base64 para arquivo e com o nome baseado no parâmetro filename.**
 
+## 7 - Relatório de rotas (exibir métricas de tempo de execução)
+
+**Objetivo:** Visualizar os relatório de rotas do Sistema MDM, contendo os valores de tempo gasto pelos operadores.
+
+Esta requisição é realizada em 3 etapas.
+
+**Etapa 1:** Obter a lista de rotas cadastradas no MDM.
+
+**Nome da operação Etapa 1:** core_getRoutes
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter os registros correspondentes da rota selecionada. Será necessário fornecer uma data de início e uma data fim para a busca de registros.
+
+**Nome da operação Etapa 2:** core_getRouteRecords
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+routeId          | string
+startDateTime    | Date
+endDateTime      | Date
+
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 3:** Obter o relatório.
+
+**Nome da operação Etapa 3:** core_getRouteTimestampReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+recordId         | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Em caso de sucesso, o content será um object com os seguintes dados:**
+
+**xml:** representa o arquivo xml com os dados de rotas. Deve ser salvo em disco para visualização com o nome de sua preferência, **contendo a extensão .xml.**\
+**xsl:** representa o arquivo xsl com os dados de estilização do relatório. Deve ser salvo em disco para visualização **com o nome style.xsl.**
