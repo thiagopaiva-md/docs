@@ -128,7 +128,7 @@ content    | string ou object[]
 
 **Etapa 2:** Obter os relatórios.
 
-**Nome da operação Etapa 1:** core_getRouteBlankReport
+**Nome da operação Etapa 1:** core_getBlankRouteReport
 
 **Parâmetros de entrada:**
 
