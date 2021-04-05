@@ -339,4 +339,66 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+### 5.5 - Relatório de Pontos Monitorados
 
+**Objetivo:** Visualizar os relatório de Pontos monitorados do sistema MDM.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de equipamentos da árvore de análise.
+
+**Nome da operação Etapa 1:** core_getEquipments
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter o relatório.
+
+**Nome da operação Etapa 2:** core_getMonitoredPointsReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+equipmentId      | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+## 6 - Importar dados
+
+**Objetivo:** Importar dados de registros do Sistema MDM através da interface do EAMON.
+
+**Nome da operação:** file_importRecordData
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo          | Descrição
+:-----------------------:|:---------------:|:---------------:
+databaseAlias            | string
+operation                | string
+content                  | string | Conteúdo do arquivo CSV de importação
+dateFormat               | number | Valores<br/> 0: dd/mm/yyyy<br/>1: mm/dd/yyyy
+
+**Parâmetros de saída:**
+Nome               |  Tipo           | Descrição
+:-----------------:|:---------------:|:---------------:
+status             | number
+content            | string ou string[] | Em caso de falha, o erro pode ser um array de string, onde cada posição descreve erro em uma célula específica do arquivo.
