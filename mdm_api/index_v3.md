@@ -401,4 +401,4 @@ dateFormat               | number | Valores<br/> 0: dd/mm/yyyy<br/>1: mm/dd/yyyy
 Nome               |  Tipo           | Descrição
 :-----------------:|:---------------:|:---------------:
 status             | number
-content            | string ou string[] | Em caso de falha na validação do arquivo, o erro pode ser um array de string, onde cada posição descreve erro em uma célula específica do arquivo.
+content            | string ou string[] | Sucesso: string<br/>Erro validação de payload: string<br/>Erro na validação do arquivo: array de string, onde cada posição descreve erro em uma célula específica do arquivo.
