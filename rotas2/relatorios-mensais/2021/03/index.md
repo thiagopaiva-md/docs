@@ -63,4 +63,31 @@ Dados disponíveis:
   - Nome do alarme configurado;
   - NMA do alarme configurado;
   - Teste a ser executado;
-  - Valor de alarme;
+-Limites de normalidade 
+  - Valor do alarme
+  - Nível 
+  - Sentido (positivo / negativo)
+  - Limites da curva Fuzzy
+
+
+#### Relatório de Pontos Monitorados
+
+O objetivo desta atividade é disponibilizar o relatório dos pontos monitorados de um Equipamento cadastrados no Sistema MDM.
+
+Dados disponíveis:
+
+- Nome;
+- Descrição;
+- Localização;
+- Frequência de amostragem;
+- Tipo de Sensor;
+- Subsistema;
+- Componente;
+- Ativo;
+- Grupo de Pontos Monitorados;
+- Direção;
+- Tipo (Online / Offline / Virtual);
+- Unidade de Aquisição;
+- Canal (Para pontos online);
+- Equação (Para pontos virtuais);
+- Letra (Para pontos virtuais).
