@@ -39,7 +39,7 @@ Entre os dados disponíveis, temos:
 
 #### Relatório de rotas: Métricas de tempo de execução
 
-O objetivo desta atividade é disponibilizar, em formato de relatório, os detalhados das métricas de tempo gastos na execução da rota.
+O objetivo desta atividade é disponibilizar, em formato de relatório, os detalhes das métricas de tempo gastos na execução da rota.
 
 Entre os dados disponíveis, temos:
 
@@ -49,3 +49,18 @@ Entre os dados disponíveis, temos:
 - Lista detalhada de tempo total da execução da rota;
 - Lista detalhada de tempo total de deslocamento entre os sistemas da rota;
 - Lista detalhada de tempo de leitura dos pontos monitorados existentes na rota.
+
+#### Relatório de Limites de alarmes
+
+O objetivo desta atividade é disponibilizar, em formato de relatório, os limites de alarmes cadastrados para os grupos de pontos monitorados no Sistema MDM.
+
+Dados disponíveis:
+
+- Informações sobre pontos monitorados e testes
+  - Nome do ponto monitorado;
+  - Grupo de Pontos;
+  - Unidade do tipo de sensor;
+  - Nome do alarme configurado;
+  - NMA do alarme configurado;
+  - Teste a ser executado;
+  - Valor de alarme;
