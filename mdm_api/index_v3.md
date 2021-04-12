@@ -395,6 +395,7 @@ Nome                     |  Tipo          | Descrição
 databaseAlias            | string
 operation                | string
 content                  | string | Conteúdo do arquivo CSV de importação
+equipmentId              | string | Id do equipamento a receber os dados de importação
 dateFormat               | number | Valores<br/> 0: dd/mm/yyyy<br/>1: mm/dd/yyyy
 
 **Parâmetros de saída:**
