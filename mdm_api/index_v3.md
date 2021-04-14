@@ -331,6 +331,7 @@ Nome       |  Tipo
 databaseAlias    | string
 operation        | string
 equipmentId      | string
+equipmentType    | number
 
 **Parâmetros de saída:**
 
