@@ -383,6 +383,69 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+### 5.6 - Relatório de Grupos de Pontos Monitorados
+
+**Objetivo:** Visualizar o relatório de grupos de pontos monitorados do sistema MDM.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de tipos de equipamentos.
+
+**Nome da operação Etapa 1:** core_getEquipmentType
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter o relatório.
+
+**Nome da operação Etapa 2:** core_getMonitoredPointsGroupsReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+equipmentType    | number
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+### 5.7 - Relatório de Falhas
+
+**Objetivo:** Visualizar o relatório de falhas do sistema MDM.
+
+**Nome da operação:** diag_getFailureReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
 ## 6 - Importar dados
 
 **Objetivo:** Importar dados de registros do Sistema MDM através da interface do EAMON.
