@@ -446,6 +446,51 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+### 5.8 - Relatório de Funcionamento do Sistema
+
+**Objetivo:** Visualizar o relatório de funcionamento do sistema MDM.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de tipos de plantas.
+
+**Nome da operação Etapa 1:** core_getEquipments
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Etapa 2:** Obter o relatório.
+
+**Nome da operação Etapa 2:** core_getSystemOperationReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+databaseAlias    | string
+operation        | string
+plantId          | string
+startDateTime    | string
+endDateTime      | string
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
 ## 6 - Importar dados
 
 **Objetivo:** Importar dados de registros do Sistema MDM através da interface do EAMON.
