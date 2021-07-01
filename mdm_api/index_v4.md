@@ -580,6 +580,30 @@ Esta requisição é realizada em 2 etapas.
 
 **Etapa 1:** Obter a lista de registros ou a lista de referências.
 
-Para detalhes desta etapa, confira o item 
+Para detalhes desta etapa, confira os itens 7 ou 8.
 
+**ATENÇÃO: Para análise comparativa, deve-se utilizar a busca de registros ou referências baseada em pontos monitorados (type = 0). Não utilizar a busca por equipamentos.**
 
+**Etapa 2:** Realizar a análise.
+
+**Nome da operação Etapa 2:** core_getComparativeAnalysis
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo           | Opcional             | Descrição
+:-----------------------:|:---------------:|:---------------:|:---------------:
+databaseAlias            | string          | Não
+operation                | string          | Não             | core_getComparativeAnalysis
+type                     | string          | Não             | "record" - Análise utilizando registros<br/>"reference" - Análise utilizando referências
+monitoredPointIds        | string[]        | Não             | Pontos Monitorados utilizados na busca de registros ou referências da etapa 1
+recordOrReferenceIds     | string[]        | Não             | Ids dos registros ou referências obtidos na etapa 1
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Exemplo no MDM:**\
+[Análise comparativa](images/AnaliseComparativa.jpg)
