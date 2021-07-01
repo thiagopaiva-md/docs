@@ -595,7 +595,7 @@ Nome                     |  Tipo           | Opcional             | Descrição
 databaseAlias            | string          | Não
 operation                | string          | Não             | core_getComparativeAnalysis
 type                     | string          | Não             | "record" - Análise utilizando registros<br/>"reference" - Análise utilizando referências
-monitoredPointIds        | string[]        | Não             | Pontos Monitorados utilizados na busca de registros ou referências da etapa 1
+monitoredPointIds        | string[]        | Não             | Ids dos Pontos Monitorados utilizados na busca de registros ou referências da etapa 1
 recordOrReferenceIds     | string[]        | Não             | Ids dos registros ou referências obtidos na etapa 1
 
 **Parâmetros de saída:**
@@ -631,7 +631,7 @@ Nome                     |  Tipo           | Opcional             | Descrição
 databaseAlias            | string          | Não
 operation                | string          | Não             | core_getSequentialAnalysis
 type                     | string          | Não             | "record" - Análise utilizando registros<br/>"reference" - Análise utilizando referências
-monitoredPointIds        | string[]        | Não             | Pontos Monitorados utilizados na busca de registros ou referências da etapa 1
+monitoredPointIds        | string[]        | Não             | Ids dos Pontos Monitorados utilizados na busca de registros ou referências da etapa 1
 recordOrReferenceIds     | string[]        | Não             | Ids dos registros ou referências obtidos na etapa 1
 
 **Parâmetros de saída:**
