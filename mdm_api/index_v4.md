@@ -538,6 +538,10 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+**Exemplo no MDM:**\
+[Buscar registro por ponto monitorado](images/BuscarRegistrosPorPontos.jpg)\
+[Buscar registro por equipamento ou diagnóstico](images/BuscarRegistrosPorEquipamento.jpg)
+
 
 ## 9 - Análise comparativa
 
