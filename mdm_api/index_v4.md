@@ -10,16 +10,19 @@
 
 **Parâmetros de entrada:** 
 
-Nome                     |  Tipo
-:-----------------------:|:---------------:
-databaseAlias            | string
-operation                | string
+Nome                     |  Tipo           | Opcional     | Descrição
+:-----------------------:|:---------------:|:------------:|:------------
+databaseAlias            | string         | Não
+operation                | string         | Não           | core_getMonitoredPointsTree  
 
 **Parâmetros de saída:**
 Nome               |  Tipo
 :-----------------:|:---------------:
 status             | number
 content            | object[]
+
+**Exemplo no MDM:**\
+[Árvore de análise](images/ArvoreAnalise.jpg)
 
 ## 2 - Executar análise personalizada
 
@@ -44,6 +47,9 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+**Exemplo no MDM:**\
+[Seleção Análise personalizada](images/ExecutarAnalisePersonalizada.jpg)
+
 **Etapa 2:** Executar a análise solicitada.
 
 **Nome da operação Etapa 2:** core_getCustomAnalysisData
@@ -61,6 +67,10 @@ Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
 content    | string ou object[]
+
+**Exemplo no MDM:**\
+[Análise sequencial](images/AnaliseSequencial.jpg)\
+[Análise comparativa](images/AnaliseComparativa.jpg)
 
 ## 3 - Turnos (visualizar)
 
@@ -101,6 +111,10 @@ Nome       |  Tipo
 :---------:|:---------------:
 status     | number 
 content    | string ou object[]
+
+**Exemplo no MDM:**\
+[Grupo Usuário](images/GrupoUsuario.jpg)\
+[Grupo Usuário - Detalhes](images/GrupoUsuarioDetalhes.jpg)
 
 ## 5 - Relatórios
 
