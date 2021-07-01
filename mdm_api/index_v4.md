@@ -542,6 +542,35 @@ content    | string ou object[]
 [Buscar registro por ponto monitorado](images/BuscarRegistrosPorPontos.jpg)\
 [Buscar registro por equipamento ou diagnóstico](images/BuscarRegistrosPorEquipamento.jpg)
 
+## 8 - Buscar referências
+
+**Objetivo:** Realizar a busca de referências armazenados no Sistema MDM.
+
+**Nome da operação:** file_selectReferences
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo           | Opcional             | Descrição
+:-----------------------:|:---------------:|:---------------:|:---------------:
+databaseAlias            | string          | Não
+operation                | string          | Não             | file_selectRecords
+startDateTime            | Date/Time       | Não             | Intervalo Inicial da busca
+endDateTime              | Date/Time       | Não             | Intervalo Final da busca
+type                     | int             | Não             | 0: Busca por pontos monitorados<br/>1: Busca por equipamentos
+monitoredPointIds        | string[]        | Sim             | Deve estar presente caso type = 0
+equipmentId              | string          | Sim             | Deve estar presente caso type = 1
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Exemplo no MDM:**\
+[Buscar referências por ponto monitorado](images/BuscarReferenciasPorPontoMonitorado.jpg)\
+[Buscar referências por equipamento](images/BuscarReferenciasPorEquipamento.jpg)
+
 
 ## 9 - Análise comparativa
 
