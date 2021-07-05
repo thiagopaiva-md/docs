@@ -553,6 +553,7 @@ status     | number
 content    | string ou object[]
 
 **Exemplo no MDM:**\
+[Tela de seleção de pontos monitorados](images/SelecaoPM.jpg)\
 [Buscar registro por ponto monitorado](images/BuscarRegistrosPorPontos.jpg)\
 [Buscar registro por equipamento ou diagnóstico](images/BuscarRegistrosPorEquipamento.jpg)
 
@@ -582,6 +583,7 @@ status     | number
 content    | string ou object[]
 
 **Exemplo no MDM:**\
+[Tela de seleção de pontos monitorados](images/SelecaoPM.jpg)\
 [Buscar referências por ponto monitorado](images/BuscarReferenciasPorPontoMonitorado.jpg)\
 [Buscar referências por equipamento](images/BuscarReferenciasPorEquipamento.jpg)
 
