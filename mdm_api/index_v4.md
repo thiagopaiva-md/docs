@@ -16,10 +16,10 @@ databaseAlias            | string         | Não
 operation                | string         | Não           | core_getMonitoredPointsTree  
 
 **Parâmetros de saída:**
-Nome               |  Tipo
-:-----------------:|:---------------:
-status             | number
-content            | object[]
+Nome               |  Tipo           | Descrição
+:-----------------:|:---------------:|:-------------
+status             | number          | 
+content            | object[]        | No nível "pontosMonitorados", parâmetro "analisesAplicaveis":<br/>0: Análise Sequencial<br/>1: Análise comparativa.
 
 **Exemplo no MDM:**\
 [Árvore de análise](images/ArvoreAnalise.jpg)
@@ -542,8 +542,8 @@ operation                | string          | Não             | file_selectRecor
 startDateTime            | Date/Time       | Não             | Intervalo Inicial da busca
 endDateTime              | Date/Time       | Não             | Intervalo Final da busca
 type                     | int             | Não             | 0: Busca por pontos monitorados<br/>1: Busca por equipamentos<br/>2: Busca registros de diagnóstico
-monitoredPointIds        | string[]        | Sim             | Deve estar presente caso type = 0
-equipmentId              | string          | Sim             | Deve estar presente caso type = 1 ou type = 2 
+monitoredPointIds        | string[]        | Sim             | Array com os IDs dos pontos Monitorados.<br>**Deve estar presente caso type = 0.**
+equipmentId              | string          | Sim             | ID do equipamento.<br/>**Deve estar presente caso type = 1 ou type = 2.**
 
 **Parâmetros de saída:**
 
@@ -553,6 +553,7 @@ status     | number
 content    | string ou object[]
 
 **Exemplo no MDM:**\
+[Tela de seleção da análise desejada, caso a entrada do ponto seja pela árvore de análise](images/SelecaoTipoAnalise.jpg)\
 [Tela de seleção de pontos monitorados](images/SelecaoPM.jpg)\
 [Buscar registro por ponto monitorado](images/BuscarRegistrosPorPontos.jpg)\
 [Buscar registro por equipamento ou diagnóstico](images/BuscarRegistrosPorEquipamento.jpg)
@@ -568,7 +569,7 @@ content    | string ou object[]
 Nome                     |  Tipo           | Opcional             | Descrição
 :-----------------------:|:---------------:|:---------------:|:---------------:
 databaseAlias            | string          | Não
-operation                | string          | Não             | file_selectRecords
+operation                | string          | Não             | file_selectReferences
 startDateTime            | Date/Time       | Não             | Intervalo Inicial da busca
 endDateTime              | Date/Time       | Não             | Intervalo Final da busca
 type                     | int             | Não             | 0: Busca por pontos monitorados<br/>1: Busca por equipamentos
@@ -583,6 +584,7 @@ status     | number
 content    | string ou object[]
 
 **Exemplo no MDM:**\
+[Tela de seleção da análise desejada, caso a entrada do ponto seja pela árvore de análise](images/SelecaoTipoAnalise.jpg)\
 [Tela de seleção de pontos monitorados](images/SelecaoPM.jpg)\
 [Buscar referências por ponto monitorado](images/BuscarReferenciasPorPontoMonitorado.jpg)\
 [Buscar referências por equipamento](images/BuscarReferenciasPorEquipamento.jpg)
