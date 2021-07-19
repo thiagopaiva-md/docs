@@ -19,7 +19,7 @@ operation                | string         | Não           | core_getMonitoredPo
 Nome               |  Tipo           | Descrição
 :-----------------:|:---------------:|:-------------
 status             | number          | 
-content            | object[]        | No nível "pontosMonitorados", parâmetro "analisesAplicaveis":<br/>0: Análise Sequencial<br/>1: Análise comparativa.
+content            | object[]        | 
 
 **Exemplo no MDM:**\
 [Árvore de análise](images/ArvoreAnalise.jpg)
@@ -661,3 +661,39 @@ content    | string ou object[]
 
 **Exemplo no MDM:**\
 [Análise sequencial](images/AnaliseSequencial.jpg)
+
+## 11 - Executar diagnóstico
+
+**Objetivo:** Executar o diagnóstico para visualização de possíveis modos de falha cadastrados no Sistema MDM.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de registros.
+
+Para detalhes desta etapa, confira o item 7.
+
+**ATENÇÃO: Para o diagnóstico, deve-se utilizar a busca de registros baseada em diagnóstico (type = 2). Não utilizar a busca por pontos monitorados.**
+
+**Etapa 2:** Realizar a análise.
+
+**Nome da operação Etapa 2:** diag_executeDiagnosys
+
+**Parâmetros de entrada:** 
+
+Nome                     |  Tipo           | Opcional             | Descrição
+:-----------------------:|:---------------:|:---------------:|:---------------:
+databaseAlias            | string          | Não             |
+operation                | string          | Não             | diag_executeDiagnosys
+recordIds                | string[]        | Não             | Ids dos registros obtidos na etapa 1
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
+**Exemplo no MDM:**\
+[Seleção Registros Diagnóstico](images/SelecaoRegistroDiagnostico.jpg)\
+[Resultado Diagnóstico](images/ResultadoDiagnostico.jpg)\
+[Relatório Diagnóstico](images/DiagnosticoRelatorio.jpg)
