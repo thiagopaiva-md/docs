@@ -505,6 +505,38 @@ Nome       |  Tipo
 status     | number 
 content    | string ou object[]
 
+### 5.9 - Relatório de Alarmados
+
+**Objetivo:** Visualizar o relatório de pontos alarmados do sistema MDM.
+
+Esta requisição é realizada em 2 etapas.
+
+**Etapa 1:** Obter a lista de registros.
+
+Para detalhes desta etapa, confira o item 7 (Buscar registros).
+
+**ATENÇÃO: Para o relatório de alarmados, deve-se utilizar SOMENTE a busca de registros baseada em equipamentos (type = 1).**
+
+**Etapa 2:** Obter o relatório.
+
+**Nome da operação:** core_getAlarmedReport
+
+**Parâmetros de entrada:**
+
+Nome       |  Tipo           | Opcional | Descrição
+:---------:|:---------------:|:------------------:|:------------------:
+databaseAlias    | string    | Não
+operation        | string    | Não             | core_getAlarmedReport
+equipmentId      | string    | Não             | Utilizar o mesmo id de equipamento utilizado como input na busca de registros da etapa anterior    
+recordIds      | string[]    | Não             | Id dos registros obtidos na busca da etapa anterior
+
+**Parâmetros de saída:**
+
+Nome       |  Tipo
+:---------:|:---------------:
+status     | number 
+content    | string ou object[]
+
 ## 6 - Importar dados
 
 **Objetivo:** Importar dados de registros do Sistema MDM através da interface do EAMON.
