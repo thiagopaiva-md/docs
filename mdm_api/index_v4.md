@@ -16,6 +16,7 @@ databaseAlias            | string         | Não
 operation                | string         | Não           | core_getMonitoredPointsTree  
 
 **Parâmetros de saída:**
+
 Nome               |  Tipo           | Descrição
 :-----------------:|:---------------:|:-------------
 status             | number          | 
@@ -35,6 +36,7 @@ Esta requisição será realizada em 2 etapas.
 **Nome da operação Etapa 1:** core_getCustomAnalysis
 
 **Parâmetros de entrada:**
+
 Nome       |  Tipo
 :---------:|:---------------:
 databaseAlias    | string
@@ -55,6 +57,7 @@ content    | string ou object[]
 **Nome da operação Etapa 2:** core_getCustomAnalysisData
 
 **Parâmetros de entrada:**
+
 Nome       |  Tipo
 :---------:|:---------------:
 databaseAlias    | string
@@ -554,6 +557,7 @@ equipmentId              | string | Id do equipamento a receber os dados de impo
 dateFormat               | number | Valores<br/> 0: dd/mm/yyyy<br/>1: mm/dd/yyyy
 
 **Parâmetros de saída:**
+
 Nome               |  Tipo           | Descrição
 :-----------------:|:---------------:|:---------------:
 status             | number
