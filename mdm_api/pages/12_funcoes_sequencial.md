@@ -60,3 +60,15 @@ signalIds                | string[]       | Não           | Ids dos sinais que 
 - soma_freqs
 - fase_1xRPM
 - rmsintegral
+
+**JSON de exemplo - parâmetros de entrada**
+
+```
+{
+  operation: 'core_getSequentialAnalysisFunction',
+  itemAnalysisType: 'record',
+  functionName: 'rmsintegral',
+  equipmentId: '{B64F8035-C1B5-4B73-B491-6325E6080A8B}',
+  signalIds: ['{19E63622-A10B-534D-8BC9-892EBF515AA8}'],
+}
+```
