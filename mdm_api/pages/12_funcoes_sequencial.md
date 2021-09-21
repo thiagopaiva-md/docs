@@ -12,7 +12,7 @@
 
 Nome                     |  Tipo           | Opcional     | Descrição
 :-----------------------:|:---------------:|:------------:|:------------
-databaseAlias            | string         | Não
+databaseAlias            | string         | Não           | O alias da base de dados utilizada no momento da chamada.
 operation                | string         | Não           | core_getSequentialAnalysisFunction
 itemAnalysisType         | string         | Não           | Valores válidos:<br/> record / reference 
 functionName             | string         | Não           | O nome da função a ser chamada.<br> Valores válidos descritos abaixo.
