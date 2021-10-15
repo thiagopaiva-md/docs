@@ -24,7 +24,7 @@ A configuração da MDM API é realizada através do arquivo config.json, que de
       host: string;
       username: string;
       password: string;
-      instanceName?: string;
+      instanceName: string;
     },
   ];
   balancing: number;
