@@ -2,6 +2,8 @@
 
 **OBS:** Para todas as chamadas, o código de retorno status será: 200 - Sucesso ou 500 - Erro.
 
+- ### [0 - Configuração da API](pages/00_configuracao_api.md) 
+
 ## 1 - Árvore de análise
 
 **Objetivo:** Trazer para o EAMon toda a informação da árvore de análise do Sistema MDM, incluindo a estrutura de equipamentos, subsistemas, componentes e pontos monitorados.
