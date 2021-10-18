@@ -100,7 +100,7 @@ timeout                  | integer        | Sim           | Valor de timeout em 
 Nome                     |  Tipo           | Opcional     | Descrição | Default
 :-----------------------:|:---------------:|:------------:|:------------|:------------
 getConfigRoutingKey      | string         | Sim           | Routing Key para consultas à função "GetConfig". | <Nome_Anaq>.GetConfig<br>Ex: ANAQ_CHV.GetConfig
-oilStockViName           | string         | Sim           | Nome da Vi utilizada para estoque de óleo.<br/><b>ATENÇÃO:</B>Apenas os pontos virtualizados com o nome dessa vi serão considerados para  a consulta do valor do estoque de óleo.| estoque.vi
+oilStockViName           | string         | Sim           | Nome da Vi utilizada para estoque de óleo.<br/><b>ATENÇÃO:</B>Apenas os pontos virtualizados vinculados ao nome dessa vi serão considerados para  a consulta do valor do estoque de óleo.| estoque.vi
 
 ### Parâmetro "balancing" - Opcional: Sim
 
