@@ -28,15 +28,23 @@ A configuração da MDM API é realizada através do arquivo config.json, que de
     },
   ];
   balancing: number;
-  anaq: {
-    rabbitMQ: {
-      host: string;
-      username: string;
-      password: string;
-      vhost: string;
-      timeout: number;
+  anaq: [
+    {
+      name: string;
+      alias: string;
+      rabbitMQ: {
+        host: string;
+        username: string;
+        password: string;
+        vhost: string;
+        timeout: number;
+        config: {
+          getConfigRoutingKey: string;
+          oilStockViName: string;
+        }
+      };
     };
-  };
+  ]
 ```
 
 ## Descrição da assinatura do arquivo config.json
@@ -69,9 +77,13 @@ username                 | string         | Sim           | O usuário configura
 password                 | string         | Sim           | A senha do usuário configurado no SGBD | sql
 instanceName             | string         | Sim           | Nome da instância no SGBD onde a base está configurada | Default instance
 
-### Seção "anaq" - **Opcional: Sim**
-Caso a seção "anaq" esteja declarada no arquivo, os parâmetros abaixo deverão ser configurados.\
-Caso a seção "anaq" não esteja declarada no arquivo, os valores default abaixo serão aplicados.
+### Seção "anaq" - **Opcional: Não**
+A seção anaq é formada por um array, o qual pode-se configurar várias anaqs para consulta. Cada parâmetro do objeto do array é descrito na tabela abaixo:
+
+Nome                     |  Tipo           | Opcional     | Descrição | Default
+:-----------------------:|:---------------:|:------------:|:------------|:------------
+name                     | string         | Não           | O nome do ANAQ. |
+alias                    | string         | Não           | O "apelido", ou alias, do Anaq. Será utilizado na identificação do ANAQ a ser trabalhada na requisição. <br/><b>ATENÇÃO: Utilizar o mesmo alias do banco de dados!</b> | 
 
 #### Subseção "rabbitMQ"
 
@@ -82,6 +94,13 @@ username                 | string         | Sim           | Username do host rab
 password                 | string         | Sim           | Password do host rabbitMQ onde se encontra o ANAQ. | anaq
 vhost                    | string         | Sim           | vHost do rabbitMQ onde se encontra o ANAQ. | "" (String vazia - Sem vHost)
 timeout                  | integer        | Sim           | Valor de timeout em ms para falha em consultas RPC | 40000ms (40s)
+
+#### Subseção "rabbitMQ.config"
+
+Nome                     |  Tipo           | Opcional     | Descrição | Default
+:-----------------------:|:---------------:|:------------:|:------------|:------------
+getConfigRoutingKey      | string         | Sim           | Routing Key para consultas à função "GetConfig". | <Nome_Anaq>.GetConfig<br>Ex: ANAQ_CHV.GetConfig
+oilStockViName           | string         | Sim           | Nome da Vi utilizada para estoque de óleo.<br/><b>ATENÇÃO:</B>Apenas os pontos virtualizados com o nome dessa vi serão considerados para  a consulta do valor do estoque de óleo.| estoque.vi
 
 ### Parâmetro "balancing" - Opcional: Sim
 
