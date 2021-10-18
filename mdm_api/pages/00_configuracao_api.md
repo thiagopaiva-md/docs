@@ -72,13 +72,13 @@ Nome                     |  Tipo           | Opcional     | Descrição | Defaul
 type                     | string         | Sim           | Valores válidos: "mssql" ou "oracle" | mssql
 alias                    | string         | Não           | O "apelido", ou alias, da base de dados. Será utilizado na identificação da base a ser trabalhada na requisição. | 
 name                     | string         | Não           | O nome da base de dados configurada no SGBD. |
-host                     | string         | Sim           | o Host onde o SGBD está instalado. | localhost
+host                     | string         | Sim           | O Host onde o SGBD está instalado. | localhost
 username                 | string         | Sim           | O usuário configurado no SGBD. | dba
 password                 | string         | Sim           | A senha do usuário configurado no SGBD | sql
 instanceName             | string         | Sim           | Nome da instância no SGBD onde a base está configurada | Default instance
 
 ### Seção "anaq" - **Opcional: Não**
-A seção anaq é formada por um array, o qual pode-se configurar várias anaqs para consulta. Cada parâmetro do objeto do array é descrito na tabela abaixo:
+A seção anaq é formada por um array, o qual pode-se configurar vários ANAQs para consulta. Cada parâmetro do objeto do array é descrito na tabela abaixo:
 
 Nome                     |  Tipo           | Opcional     | Descrição | Default
 :-----------------------:|:---------------:|:------------:|:------------|:------------
