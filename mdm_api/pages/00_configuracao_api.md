@@ -99,7 +99,7 @@ host                     | string         | Sim           | O host rabbitMQ onde
 username                 | string         | Sim           | Username do host rabbitMQ onde se encontra o ANAQ. | anaq
 password                 | string         | Sim           | Password do host rabbitMQ onde se encontra o ANAQ. | anaq
 vhost                    | string         | Sim           | vHost do rabbitMQ onde se encontra o ANAQ. | "" (String vazia - Sem vHost)
-timeout                  | integer        | Sim           | Valor de timeout em ms para falha em consultas RPC | 40000ms (40s)
+timeout                  | integer        | Sim           | Valor de timeout em ms para falha em consultas RPC | 25000ms (25s)
 
 #### Subseção "anaq.rabbitMQ.config" - Opcional: sim
 Caso a subseção "anaq.rabbitMQ.config" esteja declarada no arquivo, os parâmetros abaixo deverão ser configurados.\
