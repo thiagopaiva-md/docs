@@ -26,8 +26,7 @@ A configuração da MDM API é realizada através do arquivo config.json, que de
       password: string;
       instanceName: string;
     },
-  ];
-  balancing: number;
+  ];  
   anaq: [
     {
       name: string;
@@ -41,10 +40,15 @@ A configuração da MDM API é realizada através do arquivo config.json, que de
         config: {
           getConfigRoutingKey: string;
           oilStockViName: string;
-        }
+        };
+        apiSQL: {
+          exchange: string;
+          dbRequestJsonRoutingKey: string;
+        };
       };
     };
-  ]
+  ];
+  balancing: number;
 ```
 
 ## Descrição da assinatura do arquivo config.json
@@ -85,7 +89,9 @@ Nome                     |  Tipo           | Opcional     | Descrição | Defaul
 name                     | string         | Não           | O nome do ANAQ. |
 alias                    | string         | Não           | O "apelido", ou alias, do Anaq. Será utilizado na identificação do ANAQ a ser trabalhada na requisição. <br/><b>ATENÇÃO: Utilizar o mesmo alias do banco de dados!</b> | 
 
-#### Subseção "rabbitMQ"
+#### Subseção "anaq.rabbitMQ" - Opcional: sim
+Caso a subseção "anaq.rabbitMQ" esteja declarada no arquivo, os parâmetros abaixo deverão ser configurados.\
+Caso a subseção "anaq.rabbitMQ" não esteja declarada no arquivo, os valores default abaixo serão aplicados.
 
 Nome                     |  Tipo           | Opcional     | Descrição | Default
 :-----------------------:|:---------------:|:------------:|:------------|:------------
@@ -95,13 +101,24 @@ password                 | string         | Sim           | Password do host rab
 vhost                    | string         | Sim           | vHost do rabbitMQ onde se encontra o ANAQ. | "" (String vazia - Sem vHost)
 timeout                  | integer        | Sim           | Valor de timeout em ms para falha em consultas RPC | 40000ms (40s)
 
-#### Subseção "rabbitMQ.config"
+#### Subseção "anaq.rabbitMQ.config" - Opcional: sim
+Caso a subseção "anaq.rabbitMQ.config" esteja declarada no arquivo, os parâmetros abaixo deverão ser configurados.\
+Caso a subseção "anaq.rabbitMQ.config" não esteja declarada no arquivo, os valores default abaixo serão aplicados.
 
 Nome                     |  Tipo           | Opcional     | Descrição | Default
 :-----------------------:|:---------------:|:------------:|:------------|:------------
 exchange                 | string         | Sim           | Exchange de configuração do Anaq. | ANAQ.CFG
 getConfigRoutingKey      | string         | Sim           | Routing Key para consultas à função "GetConfig". | <Nome_Anaq>.GetConfig<br>Ex: ANAQ_CHV.GetConfig
 oilStockViNames          | string[]       | Sim           | Nome das VIs utilizadas para estoque de óleo.<br/><b>ATENÇÃO:</B> Apenas os pontos virtualizados vinculados ao nome dessas VIs serão considerados para  a consulta do valor do estoque de óleo.| ['estoque.vi']
+
+#### Subseção "anaq.rabbitMQ.apiSQL" - Opcional: sim
+Caso a subseção "anaq.rabbitMQ.apiSQL" esteja declarada no arquivo, os parâmetros abaixo deverão ser configurados.\
+Caso a subseção "anaq.rabbitMQ.apiSQL" não esteja declarada no arquivo, os valores default abaixo serão aplicados.
+
+Nome                     |  Tipo           | Opcional     | Descrição | Default
+:-----------------------:|:---------------:|:------------:|:------------|:------------
+exchange                 | string         | Sim           | Exchange de configuração da API SQL. | API.SQL
+dbRequestJsonRoutingKey  | string         | Sim           | Routing Key para consultas à função "DbRequest.Json". | <Nome_Anaq>.DbRequest.Json<br>Ex: ANAQ_CHV.DbRequest.Json
 
 ### Parâmetro "balancing" - Opcional: Sim
 
