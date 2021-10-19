@@ -101,7 +101,7 @@ Nome                     |  Tipo           | Opcional     | Descrição | Defaul
 :-----------------------:|:---------------:|:------------:|:------------|:------------
 exchange                 | string         | Sim           | Exchange de configuração do Anaq. | ANAQ.CFG
 getConfigRoutingKey      | string         | Sim           | Routing Key para consultas à função "GetConfig". | <Nome_Anaq>.GetConfig<br>Ex: ANAQ_CHV.GetConfig
-oilStockViNames          | string[]       | Sim           | Nome das VIs utilizadas para estoque de óleo.<br/><b>ATENÇÃO:</B>Apenas os pontos virtualizados vinculados ao nome dessas VIs serão considerados para  a consulta do valor do estoque de óleo.| ['estoque.vi']
+oilStockViNames          | string[]       | Sim           | Nome das VIs utilizadas para estoque de óleo.<br/><b>ATENÇÃO:</B> Apenas os pontos virtualizados vinculados ao nome dessas VIs serão considerados para  a consulta do valor do estoque de óleo.| ['estoque.vi']
 
 ### Parâmetro "balancing" - Opcional: Sim
 
