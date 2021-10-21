@@ -1,4 +1,4 @@
-# MDM API - v4
+# MDM API - v5
 
 **OBS:** Para todas as chamadas, o código de retorno status será: 200 - Sucesso ou 500 - Erro.
 
