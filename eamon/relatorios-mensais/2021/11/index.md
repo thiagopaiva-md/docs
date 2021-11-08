@@ -14,12 +14,14 @@ São utilizados 3 tipos de pontos monitorados para cálculos desses níveis, que
 
 ### 1.1 - Pontos monitorados offline
 
-Estes pontos monitorados representam os valores lidos no formulário MDM.
+Estes pontos monitorados representam os valores que são cadastrados no editor de formulário e lidos no módulo formulário web do sistema MDM.
 
 ### 1.2 - Pontos monitorados virtuais
 
-Estes pontos monitorados representam os valores lidos no formulário MDM.
+Estes pontos monitorados representam uma operação matemática com base em um ou mais pontos monitorados offline, e o resultado desta operação representa a taxa de consumo de óleo.
 
 ### 1.3 - Pontos monitorados virtualizados
 
-Estes pontos monitorados representam os valores lidos no formulário MDM.
+Estes pontos monitorados representam operações matemáticas mais complexas, onde os cálculos são efetuados no ANAQ. O resultado dessas operações representa o valor do estoque de óleo.
+
+## 2 - Funções da análise sequencial
