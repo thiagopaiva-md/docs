@@ -15,7 +15,7 @@ operation                | string         | Não           | core_getMonitoredPo
 ```
 {
   "databaseAlias": "ILS",
-  "operation": "core_getOilTankLevels",
+  "operation": "core_getMonitoredPointsTree",
 }
 ```
 
