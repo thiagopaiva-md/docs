@@ -72,43 +72,7 @@ analysisId       | string
 }
 ```
 
-## Saída - Etapa 2 (Análise sequencial)
-
-**Descrição dos parâmetros de saída em caso de sucesso, presentes no array de objetos "content":**
-
-**Atenção:** A tabela abaixo descreve cada um dos objetos presentes no array.
-
-Nome                           |  Tipo           | Descrição
-:-----------------------------:|:---------------:|:-------------
-groupedSignals                 | object[]        | Sinais da análise agrupados por pontos monitorados
-operationPoints                | object[]        | Os pontos de operação do equipamento
-
-Descrição do Array "grupedSignals", objeto "monitoredPoint":
-
-Nome                     |  Tipo           | Descrição
-:-----------------------:|:---------------:|:-------------
-id                       | string          | Id do Ponto Monitorado
-name                     | string          | Nome do Ponto Monitorado
-type                     | integer         | Representa sinal estático (0) ou dinâmico (1)
-
-Descrição do array "grupedSignals", array "signals":
-
-Nome                     |  Tipo           | Descrição
-:-----------------------:|:---------------:|:-------------
-id                       | string          | Id do sinal gravado
-dateTime                 | dateTime        | Data/Hora do sinal gravado
-value                    | float[]         | Array de uma posição que representa o valor do sinal gravado
-operationPoints          | object[]        | Os pontos de operação do registro ou referência
-
-Descrição do array "operationPoints":
-
-Nome                     |  Tipo           | Descrição
-:-----------------------:|:---------------:|:-------------
-id                       | string          | Id do ponto de operação, deve ser correlacionado com os pontos de operação<br/> do array groupedSignals.signals.operationPoints
-idMonitoredPoint         | string          | Id do ponto monitorado do ponto de operação
-name                     | name            | Nome do ponto monitorado do ponto de operação
+### [Saída - Etapa 2 - Análise sequencial](./02a_analise_personalizada_saida_sequencial.md)
 
 
-**Exemplo no MDM:**\
-[Análise sequencial](../images/AnaliseSequencial.jpg)\
 [Análise comparativa](../images/AnaliseComparativa.jpg)
