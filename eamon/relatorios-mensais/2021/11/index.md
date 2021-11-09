@@ -25,3 +25,49 @@ Estes pontos monitorados representam uma operação matemática com base em um o
 Estes pontos monitorados representam operações matemáticas mais complexas, onde os cálculos são efetuados no ANAQ. O resultado dessas operações representa o valor do estoque de óleo.
 
 ## 2 - Funções da análise sequencial
+
+O objetivo desta funcionalidade é disponibilizar no portal EAMon Lion as diversas funções presentes na ferramenta de análise sequencial e que são aplicáveis em sinais dinâmicos.
+
+Funções aplicáveis:
+
+- picoapico
+- maximo
+- minimo
+- media
+- desvio
+- rms
+- freq0_40
+- freq40_50
+- freq50_100
+- freq_1xRPM
+- freq_2xRPM
+- freq_50_1xRPM
+- freq_25_1xRPM
+- freq_mult_inf
+- freq_mult_sup
+- freq_impares
+- freq_nat_estator
+- freq_nat_rotor
+- freq_rede
+- freq_elet_mult_sup
+- freq_rpmxsap_esc
+- freq_muito_altas
+- freq_pp
+- 2xfreq_pp
+- freq_pp_d
+- freq_nat_pd
+- freq_pp_cav
+- 2xfreq_pp_cav
+- bpfi
+- bpfo
+- bsf
+- ftfi
+- ftfo
+- bpfienvelope
+- bpfoenvelope
+- bsfenvelope
+- ftfienvelope
+- ftfoenvelope
+- soma_freqs
+- fase_1xRPM
+- rmsintegral
