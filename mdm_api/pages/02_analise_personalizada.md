@@ -8,12 +8,38 @@ Esta requisição será realizada em 2 etapas.
 
 **Nome da operação Etapa 1:** core_getCustomAnalysis
 
-**Parâmetros de entrada:**
+**Parâmetros de entrada - etapa 1:**
 
 Nome       |  Tipo
 :---------:|:---------------:
 databaseAlias    | string
 operation        | string
+
+**JSON de exemplo - parâmetros de entrada:**
+```
+{
+  "databaseAlias": "ILS",
+  "operation": "core_getCustomAnalysis",
+}
+```
+
+## Saída - Etapa 1
+
+**Descrição dos parâmetros de saída em caso de sucesso, presentes no array de objetos "content":**
+
+**Atenção:** A tabela abaixo descreve cada um dos objetos presentes no array.
+
+Nome                           |  Tipo           | Descrição
+:-----------------------------:|:---------------:|:-------------
+id                             | string              | Id da análise personalizada
+nome                           | string              | Nome da análise personalizada
+qtdeTempo                      | integer             | Quantidade de tempo para a busca de registros
+periodo                        | integer             | Período da busca de registros (dias, meses ou anos)
+ferramenta                     | string              | Nome da ferramenta de análise
+tipoDeDado                     | integer             | Tipo de dado da análise (referência, registro, online)
+descricao                      | string              | Descrição da análise personalizada
+idsInstrumentosSelecionados    | string              | Ids dos pontos monitorados ou equipamentos, separados por ponto e vírgula (;)
+tipoInstrumento                | integer             | Tipo de instrumento (ponto monitorado ou equipamento)
 
 **Parâmetros de saída:**
 
