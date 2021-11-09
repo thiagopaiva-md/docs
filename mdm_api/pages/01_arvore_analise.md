@@ -87,9 +87,19 @@ descricao                | string                   | Descrição do ponto monit
 localizacao              | string                   | Localização do ponto monitorado
 direcao                  | integer                  | Direção do ponto monitorado em graus (0, 90, 180, 270)
 ativo                    | integer                  | Indica se o ponto está ativo (0 ou 1)
-tipoSensor               | object<MonitoredPoint>[] | Array de objetos tipo sensor deste ponto monitorado, apresentado a seguir
+tipoSensor               | object<SensorType>[]     | Array de objetos tipo sensor deste ponto monitorado, apresentado a seguir
+  
+**Quinto nível no JSON:** Tipo Sensor
+  
+Nome               |  Tipo           | Descrição
+:-----------------:|:---------------:|:-------------
+id                 | string                   | Id do tipo sensor
+nome               | string                   | Nome do tipo sensor
+unidadeStr         | string                   | Unidade de medição do tipo sensor em string
+unidade            | string                   | Unidade de medição do tipo sensor em numérico
+tipoSensor         | integer                  | Tipo do transdutor
+taxaAmostragem     | integer                  | Taxa de amostragem do sensor
+nroAmostras        | string                   | Número de amostras do sensor
 
 **Exemplo no MDM:**\
-[Árvore de análise](images/ArvoreAnalise.jpg)
-
-  
+[Árvore de análise](../images/ArvoreAnalise.jpg)
