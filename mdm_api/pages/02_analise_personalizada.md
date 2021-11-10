@@ -41,16 +41,6 @@ descricao                      | string              | Descrição da análise p
 idsInstrumentosSelecionados    | string              | Ids dos pontos monitorados ou equipamentos, separados por ponto e vírgula (;)
 tipoInstrumento                | integer             | Tipo de instrumento (ponto monitorado ou equipamento)
 
-**Parâmetros de saída:**
-
-Nome       |  Tipo
-:---------:|:---------------:
-status     | number 
-content    | string ou object[]
-
-**Exemplo no MDM:**\
-[Seleção Análise personalizada](../images/ExecutarAnalisePersonalizada.jpg)
-
 **Etapa 2:** Executar a análise solicitada.
 
 **Nome da operação Etapa 2:** core_getCustomAnalysisData
@@ -71,6 +61,9 @@ analysisId       | string
   "analysisId": "{F5F739B0-E409-4298-A69A-DB178820C273}"
 }
 ```
+
+**Exemplo no MDM:**\
+[Seleção Análise personalizada](../images/ExecutarAnalisePersonalizada.jpg)
 
 ### [Saída - Etapa 2 - Análise sequencial](./02a_analise_personalizada_saida_sequencial.md)
 
