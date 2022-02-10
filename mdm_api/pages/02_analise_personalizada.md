@@ -36,7 +36,7 @@ nome                           | string              | Nome da análise personal
 qtdeTempo                      | integer             | Quantidade de tempo para a busca de registros
 periodo                        | integer             | Período da busca de registros (dias, meses ou anos)
 ferramenta                     | string              | Nome da ferramenta de análise
-tipoDeDado                     | integer             | Tipo de dado da análise (referência, registro, online)
+tipoDeDado                     | integer             | Tipo de dado da análise (2850 - referência, 2851 - registro)
 descricao                      | string              | Descrição da análise personalizada
 idsInstrumentosSelecionados    | string              | Ids dos pontos monitorados ou equipamentos, separados por ponto e vírgula (;)
 tipoInstrumento                | integer             | Tipo de instrumento (ponto monitorado ou equipamento)
