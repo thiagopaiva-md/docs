@@ -2,6 +2,8 @@
 
 **OBS:** Para todas as chamadas, o código de retorno status será: 200 - Sucesso ou 500 - Erro.
 
+**OBS:** Para o protocolo MQTT, é obrigatório o parâmetro "replyTo" no corpo da requisição, junto aos parâmetros "databaseAlias" e "operation".
+
 - ### [0 - Configuração da API](pages/00_configuracao_api.md) 
 
 - ### [1 - Árvore de análise](pages/01_arvore_analise.md) 
