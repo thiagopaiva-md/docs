@@ -10,6 +10,7 @@ A configuração da MDM API é realizada através do arquivo config.json, que de
     host: string;
     username: string;
     password: string;
+    type: string;
     vhost: string;
     rpcQueueName: string;
     helperQueueName: string;
@@ -62,6 +63,7 @@ Nome                     |  Tipo           | Opcional     | Descrição | Defaul
 host                     | string         | Sim           | O host rabbitMQ ao qual a API se conecta para receber requisições. | localhost
 username                 | string         | Sim           | Username do rabbitMQ ao qual a API se conecta para receber requisições. | anaq
 password                 | string         | Sim           | Password do rabbitMQ ao qual a API se conecta para receber requisições. | anaq
+type                     | string         | Sim           | Tipo de conexão, podendo ser amqp ou mqtt. | amqp
 vhost                    | string         | Sim           | vHost rabbitMQ ao qual a API se conecta para receber requisições. | "" (String vazia - Sem vHost)
 rpcQueueName             | string         | Sim           | Nome da fila de RPC do serviço MDM API | q_mdm.api.rpc
 helperQueueName          | string         | Sim           | Nome da fila para requisições ao Helper (serviço de processamento de sinais) | q_mdm.api.helper
